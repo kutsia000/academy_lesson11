@@ -55,27 +55,27 @@ console.log();
 
 let data = ["sandro","ana","beqa","nino","nika","salome","lasha"];
 
-let getData=()=>{
-    for(let i=0;i<data.length;i++){
-        console.log(data[i]);
+let getData=(names)=>{
+    for(let i=0;i<names.length;i++){
+        console.log(names[i]);
     }
     console.log();
-    for(let c of data){
+    for(let c of names){
         console.log(c);
     }
     console.log();
     let c = 0;
-    while(c<data.length){
-        console.log(data[c]);
+    while(c<names.length){
+        console.log(names[c]);
         c++;
     }
     console.log();
-    data.forEach(element => {
+    names.forEach(element => {
         console.log(element);
     });
 }
 
-getData();
+getData(data);
 
 if(data.length===5&&data[data.length-1]==="nika") console.log("masivis raodenoba: 5 da bolo elementia nika");
 
