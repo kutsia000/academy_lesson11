@@ -55,7 +55,7 @@ console.log();
 
 let data = ["sandro","ana","beqa","nino","nika","salome","lasha"];
 
-getData=()=>{
+let getData=()=>{
     for(let i=0;i<data.length;i++){
         console.log(data[i]);
     }
